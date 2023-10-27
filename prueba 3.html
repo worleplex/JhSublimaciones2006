@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Negocio de sublimaciones</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="miestilo.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <div style="background-color: #f2f2f2; padding: 20px;">
+    <script>
+    function mostrarFormulario() {
+    var formulario = document.getElementById("formulario");
+    formulario.style.display = "block";
+    }
+    function ocultarFormulario() {
+    var formulario = document.getElementById("formulario");
+    formulario.reset();
+    formulario.style.display = "none";
+    }
+    document.getElementById("formulario").onsubmit = function() {
+    ocultarFormulario();
+    return false;
+    };
+    document.getElementById("cancelar").onclick = function() {
+    ocultarFormulario();
+    };
+    function mostrarFormulario2() {
+    var formulario2 = document.getElementById("formulario2");
+    formulario2.style.display = "block";
+    }
+    function ocultarFormulario2() {
+    var formulario2 = document.getElementById("formulario2");
+    formulario2.reset();
+    formulario2.style.display = "none";
+    }
+    document.getElementById("formulario2").onsubmit = function() {
+    ocultarFormulario2();
+    return false;
+    };
+    document.getElementById("cerrar").onclick = function() {
+    ocultarFormulario2();
+    };
+    function mostrarFormulario3() {
+    var formulario3 = document.getElementById("formulario3");
+    formulario3.style.display = "block";
+    }
+    function ocultarFormulario3() {
+    var formulario3 = document.getElementById("formulario3");
+    formulario3.reset();
+    formulario3.style.display = "none";
+    }
+    document.getElementById("formulario3").onsubmit = function() {
+    ocultarFormulario3();
+    return false;
+    };
+    document.getElementById("cerrar").onclick = function() {
+    ocultarFormulario3();
+    };
+    function mostrarFormulario4() {
+    var formulario4 = document.getElementById("formulario4");
+    formulario4.style.display = "block";
+    }
+    function ocultarFormulario4() {
+    var formulario4 = document.getElementById("formulario4");
+    formulario4.reset();
+    formulario4.style.display = "none";
+    }
+    document.getElementById("formulario4").onsubmit = function() {
+    ocultarFormulario4();
+    return false;
+    };
+    document.getElementById("cerrar").onclick = function() {
+    ocultarFormulario4();
+    };
+    function mostrarFormulario5() {
+    var formulario5 = document.getElementById("formulario5");
+    formulario5.style.display = "block";
+    }
+    function ocultarFormulario5() {
+    var formulario5 = document.getElementById("formulario5");
+    formulario5.reset();
+    formulario5.style.display = "none";
+    }
+    document.getElementById("formulario4").onsubmit = function() {
+    ocultarFormulario5();
+    return false;
+    };
+    document.getElementById("cerrar").onclick = function() {
+    ocultarFormulario5();
+    };
+</script>
+</head>
+<body>
+  <header>
+    <img src="https://i.ibb.co/zRrYt84/negocio.jpg" alt="Descripción de tu imagen" style="float:left;width:200px;height:150px;">
+    <div align="center"><h1>Jh Sublimaciones</h1></div>
+  </header>
+    <nav class="menu" style="float: left; margin-right: 30px;">
+      <ul>
+         <li><a href="#"><button onclick="retroceder()">Salir</button></a></li>
+         <li><a href="#sudaderas">Sudaderas</a></li>
+         <li><a href="#libretas">Libretas</a></li>
+         <li><a href="#camisas">Camisas</a></li>
+         <li><a href="#fundas">Fundas</a></li>
+         <li><a href="#tazas">Tazas</a></li>
+         <li><a href="http://localhost/Pagina de comentarios.html">Sugerencias</a></li>
+      </ul>
+    </nav>
+  <main class="container">
+    <section id="inicio">
+      <h1>Bienvenidos a nuestra tienda de Sublimaciones</h1>
+      <h3><p>Personalizamos todo tipo de articulo contamos con camisetas y Sudaderas para todas las edades, Tazas, Vasos, lonas, llaveros, portaretratos, rompecabezas, portabotes, moños, accessorios para moviles, libretas y accesorios para todas las edades</p></h3>
+      <h3><p>Visita nuestra página de productos para conocer todas nuestras ofertas que tenemos en todos nuestros articulos</p></h3>
+    </section>
+    <section id="sudaderas">
+      <h2>Productos</h2>
+      <div class="producto">
+      <img src="imagen10.jpg" height="700px" alt="Producto 1"><img src="imagen13.jpg" height="700px" alt="Producto 1">
+      <h3>Producto 1</h3>
+      <p>Sudaderas personalizadas</p>
+      <p>Precio: $400</p>
+      <button onclick="mostrarFormulario()">Elija un diseño o envie el suyo:</button>
+      <div id="formulario">
+      <h2>Formulario de requisitos para comprar el producto</h2>
+      <form action="https://formsubmit.co/izaguirre.julian.cb37@gmail.com" method="POST">
+      <div class="contact_form">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" name="nombre"><br>
+        <label for="apellido">Celular:</label>
+        <input type="text" name="apellido"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+        <label for="fecha">Fecha limite:</label>
+        <input type="date" name="fecha"><br>
+        <label for="estatura">Talla:</label>
+        <input type="number" id="estatura" name="estatura"><br>
+        <label for="sexo">Para:</label><br>
+        <input type="radio" name="sexo"><label>Hombre</label><br>
+        <input type="radio" name="sexo"><label>Mujer</label><br>
+        <label for="diseno">Seleccione un archivo para el diseño:</label>
+        <input type="file" id="diseno" name="diseno"><br>
+        <label for="color">Color de la prenda:</label><br>
+        <input type="color" name="color"><br>
+        <p align="center"><input type="reset"> 
+        <input type="submit"></p>
+        <button type="button" onClick="history.go(-1);">Volver</button></button>
+      </div>
+      </form>
+      </div>
+      </div>
+      <div class="producto" id="libretas">
+      <img src="imagen11.jpg" height="500px" alt="Producto 2">
+      <h3>Producto 2</h3>
+      <p>Libretas personalizadas</p>
+      <p>Precio: $150.00</p>
+      <button type="button" onclick="mostrarFormulario2()">Elija un diseño o envie el suyo:</button>
+      <div id="formulario2">
+      <h2>Formulario de requisitos para comprar el producto</h2>
+      <form action="https://formsubmit.co/izaguirre.julian.cb37@gmail.com" method="POST">
+      <div class="contact_form">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" name="nombre"><br>
+        <label for="apellido">Celular:</label>
+        <input type="text" name="apellido"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+        <label for="fecha">Fecha limite:</label>
+        <input type="date" name="fecha"><br>
+        <label for="sexo">Elija el tamaño:</label><br>
+        <input type="radio" name="sexo"><label>Chico</label><br>
+        <input type="radio" name="sexo"><label>Mediano</label><br>
+        <input type="radio" name="sexo"><label>Grande</label><br>
+        <label for="diseno">Seleccione un archivo para el diseño:</label>
+        <input type="file" id="diseno" name="diseno"><br>
+        <label for="color">Color de la libreta:</label><br>
+        <input type="color" name="color"><br>
+        <p align="center"><input type="reset">
+        <input type="submit"></p>
+        <button type="button" onClick="history.go(-1);">Volver</button></button>
+      </div>
+      </form>
+      </div>
+      </div>
+      <div class="producto" id="camisas">
+      <img src="imagen12.jpg" height="500px" alt="Producto 3">
+      <h3>Producto 3</h3>
+      <p>Camisetas para todas las edades</p>
+      <p>Precio: $190.00</p>
+      <button type="button" onclick="mostrarFormulario3()">Elija un diseño o envie el suyo:</button>
+      <div id="formulario3">
+      <h2>Formulario de requisitos para comprar el producto</h2>
+      <form action="https://formsubmit.co/izaguirre.julian.cb37@gmail.com" method="POST">
+      <div class="contact_form">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" name="nombre"><br>
+        <label for="apellido">Celular:</label>
+        <input type="text" name="apellido"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+        <label for="fecha">Fecha limite:</label>
+        <input type="date" name="fecha"><br>
+        <label for="sexo">Para:</label><br>
+        <input type="radio" name="sexo"><label>Hombre</label><br>
+        <input type="radio" name="sexo"><label>Mujer</label><br>
+        <label for="diseno">Seleccione un archivo para el diseño:</label>
+        <input type="file" id="diseno" name="diseno"><br>
+        <label for="color">Color de la playera:</label><br>
+        <input type="color" name="color"><br>
+        <p align="center"><input type="reset">
+        <input type="submit"></p>
+        <button type="button" onClick="history.go(-1);">Volver</button></button>
+      </div>
+      </form>
+      </div>
+      </div>
+      <div class="producto" id="tazas">
+      <img src="imagen14.jpg" height="500px" alt="Producto 3">
+      <h3>Producto 4</h3>
+      <p>Tazas personalizadas</p>
+      <p>Tazas $90 tazas mágicas $150 Tazas jumbo $170</p>
+      <button type="button" onclick="mostrarFormulario4()">Elija un diseño o envie el suyo:</button>
+      <div id="formulario4">
+      <h2>Formulario de requisitos para comprar el producto</h2>
+      <form action="https://formsubmit.co/izaguirre.julian.cb37@gmail.com" method="POST">
+      <div class="contact_form">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" name="nombre"><br>
+        <label for="apellido">Celular:</label>
+        <input type="text" name="apellido"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+        <label for="fecha">Fecha limite:</label>
+        <input type="date" name="fecha"><br>
+        <label for="sexo">Tamaño de la taza:</label><br>
+        <input type="radio" name="sexo"><label>Mágica</label><br>
+        <input type="radio" name="sexo"><label>Jumbo</label><br>
+        <input type="radio" name="sexo"><label>Normal</label><br>
+        <label for="diseno">Seleccione un archivo para el diseño:</label>
+        <input type="file" id="diseno" name="diseno"><br>
+        <label for="color">Color de la taza:</label><br>
+        <input type="color" name="color"><br>
+        <p align="center"><input type="reset">
+        <input type="submit"></p>
+        <button type="button" onClick="history.go(-1);">Volver</button></button>
+      </div>
+      </form>
+      </div>
+      </div>
+      <div class="producto" id="fundas">
+      <img src="imagen15.jpg" height="500px" alt="Producto 3">
+      <h3>Producto 5</h3>
+      <p>Fundas de celular personalizadas</p>
+      <p>Fundas para celular con pedrería $400</p>
+      <button type="button" onclick="mostrarFormulario5()">Elija un diseño o envie el suyo:</button>
+      <div id="formulario5">
+      <h2>Formulario de requisitos para comprar el producto</h2>
+      <form action="https://formsubmit.co/izaguirre.julian.cb37@gmail.com" method="POST">
+      <div class="contact_form">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" name="nombre"><br>
+        <label for="apellido">Celular:</label>
+        <input type="text" name="apellido"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+        <label for="fecha">Fecha limite:</label>
+        <input type="date" name="fecha"><br>
+        <label for="cell">Ingrese el tipo de celular:</label>
+        <input type="text" name="cell"><br>
+        <label for="diseno">Seleccione un archivo para el diseño:</label>
+        <input type="file" id="diseno" name="diseno"><br>
+        <label for="color">Color de la funda:</label><br>
+        <input type="color" name="color"><br>
+        <p align="center"><input type="reset">
+        <input type="submit"></p>
+        <button type="button" onClick="history.go(-1);">Volver</button></button>
+      </div>
+      </form>
+      </div>
+      </div>
+       <section id="contacto">
+        <h2 id="contacto">Contactanos en:</h2>
+        <div class="iconos">
+    <div class="border-icon" style="margin-right: 30px;">
+  <a href="https://instagram.com/jh_sublimaciones_cd.obregon?igshid=MzRlODBiNWFlZA==" target="_blank">
+            <i class='bx bxl-instagram' ></i>
+    </a>
+    </div>
+    <div class="border-icon" style="margin-right: 30px;">
+  <a href="https://www.tiktok.com/@jhsublimaciones?_t=8gpHuCptnz4&_r=1" target="_blank">
+            <img src="https://fatimamartinez.es/wp-content/uploads/2022/03/LOGO-TIKTOK-png.png" width="40px" height="40">
+  </a>
+    </div>
+    <div class="border-icon" style="margin-right: 30px;">
+  <a href="https://www.facebook.com/jh.sublimaciones?mibextid=9R9pXO" target="_blank">
+            <i class='bx bxl-facebook-circle' ></i>
+  </a>
+    </div>
+    <h2>Como @Jh Sublimaciones</h2>
+      </div>
+    </section>
+    </section>
+</main>
+</body>
+</html>

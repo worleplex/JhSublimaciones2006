@@ -1,0 +1,75 @@
+#wrapper {
+				max-width: 400px;
+				margin: 0 auto;
+				padding: 20px;
+				background: #8e9eab; 
+                background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  
+                background: linear-gradient(to right, #eef2f3, #8e9eab); 
+
+				border: 1px solid #ddd;
+				border-radius: 5px;
+			}
+
+			h2 {
+				text-align: center;
+			}
+
+			form {
+				display: grid;
+				gap: 10px;
+			}
+
+			label {
+				font-weight: bold;
+			}
+
+			input[type="text"],
+			input[type="email"],
+			textarea {
+				width: 100%;
+				padding: 5px;
+				border: 1px solid #ddd;
+				border-radius: 3px;
+			}
+
+			button {
+				padding: 10px 20px;
+				background-color: #4CAF50;
+				border: none;
+				color: white;
+				border-radius: 5px;
+				cursor: pointer;
+			}
+
+			button:hover {
+				background-color: #45a049;
+			}
+			body{
+				background: #BBD2C5;  
+                background: -webkit-linear-gradient(to right, #536976, #BBD2C5);  
+                background: linear-gradient(to right, #536976, #BBD2C5);
+				font-family: cursive;
+			}
+			.boton-salir {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #007BFF;
+				color: #fff;
+				text-decoration: none;
+				border-radius: 5px;
+				font-weight: bold;
+				transition: background-color 0.3s;
+			}
+		
+			.boton-salir:hover {
+				background-color: #0056b3;
+			}
+			input{
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: #007BFF;
+				color: #fff;
+				text-decoration: none;
+				border-radius: 5px;
+				font-weight: bold;
+			}

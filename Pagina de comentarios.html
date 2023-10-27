@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acerca de JH Sublimaciones</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header div {
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            padding-right: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            color: #2b2626;
+        }
+
+        p {
+            margin-bottom: 20px;
+            letter-spacing: 2px;
+            line-height: 25px;
+        }
+
+        .comments {
+            margin-top: 30px;
+        }
+
+        .comment {
+            background-color: #cacac9;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .comment h3 {
+            margin: 0;
+        }
+
+        .comment p {
+            margin-top: 5px;
+        }
+
+        .comment-author {
+            font-weight: bold;
+        }
+        button {
+			padding: 10px 20px;
+			background-color: #4CAF50;
+			border: none;
+			color: white;
+			border-radius: 5px;
+            cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #45a049;
+		}
+        .boton-salir {
+			display: inline-block;
+			padding: 10px 20px;
+			background-color: #007BFF;
+			color: #fff;
+			text-decoration: none;
+			border-radius: 5px;
+			font-weight: bold;
+			transition: background-color 0.3s;
+		}
+		.boton-salir:hover {
+			background-color: #0056b3;
+		}
+    </style>
+</head>
+<body>
+    <header>
+        <div><img src="https://i.ibb.co/zRrYt84/negocio.jpg" alt="Imagen de ejemplo" width="159px" height="159px"></div>
+        <h1>Sugererencias</h1>
+        <p>Tu lugar para recomendaciones de todo tipo.</p>
+    </header>
+
+    <div class="container">
+        <h2>Acerca de JH Sublimaciones</h2>
+        <p>JH Sublimaciones es un negocio dedicado a la sublimación de productos personalizados. Ofrecemos una amplia variedad de productos, incluyendo tazas, camisas, cuadernos y más, todos personalizados según tus gustos y necesidades.</p>
+
+        <h2>Sugerencias de Usuarios</h2>
+        <div class="comments">
+            <div class="comment">
+                <h3>Usuario 1</h3>
+                <p class="comment-author">Oliver Valenzuela Ochoa</p>
+                <p>Ofrece una variedad de productos personalizados, desde camisetas y tazas hasta fundas 
+                    para teléfonos y almohadas. Cuantas más opciones ofrezcas, más atractivo serás para 
+                    una audiencia amplia</p>
+            </div>
+
+            <div class="comment">
+                <h3>Usuario 2</h3>
+                <p class="comment-author">Saul Enrique Gonzales Quintero</p>
+                <p>Colabora con otros negocios locales para promocionar tus servicios. 
+                    Puedes ofrecer descuentos o paquetes promocionales en conjunto, lo que puede 
+                    aumentar la visibilidad de tu marca en la comunidad.</p>
+            </div>
+
+            <div class="comment">
+                <h3>Usuario 3</h3>
+                <p class="comment-author">Juan Manuel Hernandez Garcia</p>
+                <p>Asegúrate de que la calidad de tus productos personalizados sea excepcional. 
+                    La atención al detalle en la sublimación y la capacidad de personalización son 
+                    clave para destacar en el mercado.</p>
+            </div>
+
+            <div class="comment">
+                <h3>Usuario 4</h3>
+                <p class="comment-author">Valeria Rodriguez Delgado</p>
+                <p>Asegúrate de mostrar ejemplos de diseños personalizados y proporcionar 
+                    información de contacto clara.</p>
+            </div>
+
+            <div class="comment">
+                <h3>Usuario 5</h3>
+                <p class="comment-author">Selene Delgado Lopez</p>
+                <p>Ofrece un excelente servicio al cliente. Escucha las necesidades de tus clientes y 
+                    trabaja con ellos para crear diseños únicos que reflejen su estilo y personalidad.</p>
+            </div>
+            <form action="https://formsubmit.co/izaguirre.julian.cb37@gmail.com" method="POST">
+                <textarea cols="40" rows="10" placeholder="Escribir..." required></textarea ><br><br>
+                <button type="submit" value="Enviar">Enviar</button><br><br>
+                <a class="boton-salir" onClick="history.go(-1);">Salir</a>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
