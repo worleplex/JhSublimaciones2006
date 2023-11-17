@@ -1,0 +1,23 @@
+.navegacion ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3498db;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navegacion ul ul li {
+    width: 100%;
+    padding: 0;
+    text-align: left;
+}
+
+.navegacion ul li:hover > ul {
+    display: block;
+}
+
+.menu-desplegable {
+    position: relative;
+    display: inline-block;
+}

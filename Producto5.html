@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0"
+		/>
+		<title>Pagina Producto</title>
+		<link rel="stylesheet" href="styles.css"/>
+
+		<style>
+			/* Agrega estilos para ocultar el menú desplegable por defecto */
+			.navegacion ul ul {
+				display: none;
+				position: absolute;
+				top: 100%;
+				left: 0;
+				background-color: #000000; /* Cambia el color de fondo a azul */
+				box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajusta la sombra según tus necesidades */
+			}
+	
+			/* Ajusta el ancho y elimina el padding para apilar las opciones */
+			.navegacion ul ul li {
+				width: 100%;
+				padding: 0;
+				text-align: left;
+			}
+	
+			/* Ajusta estilos para mostrar el menú desplegable cuando la clase 'desplegado' está presente */
+			.navegacion ul li:hover > ul {
+				display: block;
+			}
+	
+			/* Agrega estilos para el contenedor del menú desplegable */
+			.menu-desplegable {
+				position: relative;
+				display: inline-block;
+			}
+		</style>
+	</head>
+	<body>
+		<header class="header">
+            <div class="container logo-nav-container">
+                <img class="logo" src="https://i.ibb.co/zRrYt84/negocio.jpg">
+                <span class="menu-icon">Camisetas</span>
+                <nav class="navegacion">
+                    <ul>
+                        <li><a href="Pagina informativa.html">Inicio</a></li>
+                        <li><a href="prueba 3.html">Productos</a></li>
+                        <li><a href="Pagina de comentarios.html">Comentarios</a></li>
+                        <li class="menu-desplegable">
+							<a href="#">Precios</a>
+							<ul>
+								<li><a href="Producto3.html">Sudaderas</a></li>
+                            <li><a href="Producto4.html">Libretas</a></li>
+                            <li><a href="Producto5.html">Camisetas</a></li>
+                            <li><a href="Producto6.html">Sudaderas para mujeres</a></li>
+                            <li><a href="Producto7.html">Tazas</a></li>
+                            <li><a href="Producto8.html">Tazas magicas</a></li>
+                            <li><a href="Producto9.html">Tazas jumbo</a></li>
+							</ul>
+						</li>
+                    </ul>
+                </nav>
+            </div>
+			
+        </header>
+		<main>
+			<div class="container-img">
+				<a href="#img3">
+					<img src="imagen12.jpg" alt="imagen-producto">
+				</a>
+			</div>
+			<article class="ligth-box" id="img3">
+				<img src="img3.png" alt="">
+				<a href="" class="close">x</a>
+			</article>
+			<div class="container-info-product">
+				<div class="container-price">
+					<span>$190.00</span>
+				</div>
+				<div class="container-add-cart">
+					<div class="container-quantity">
+						<input type="number" id="inputNumber" placeholder="Ingresa un número">
+						<button id="calculateButton" mostrarResultado()>Añadir a carrito</button>
+					</div>
+				</div>
+
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+							Camisetas para todas las edades<br>
+						</p>
+					</div>
+				</div>
+				<script>
+					// Función para mostrar el resultado en una ventana emergente
+					function mostrarResultado() {
+				const inputElement = document.getElementById('inputNumber');
+				const inputValue = parseFloat(inputElement.value);
+		
+				if (!isNaN(inputValue)) {
+					const valorEspecifico = 190; // Puedes cambiar este valor según tus necesidades
+					const resultado = inputValue * valorEspecifico;
+					alert("El resultado de la multiplicación es: " + resultado + " pesos");
+				} else {
+					alert("Por favor, ingrese un número válido.");
+				}
+			}
+			document.getElementById('calculateButton').addEventListener('click', mostrarResultado);
+				</script>				
+		<script src="https://kit.fontawesome.com/81581fb069.js"	crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        
+	</body>
+</html>
