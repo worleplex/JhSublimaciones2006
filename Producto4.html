@@ -7,7 +7,7 @@
 			name="viewport"
 			content="width=device-width, initial-scale=1.0">
 		<title>Pagina Producto</title>
-		<link rel="stylesheet" href="styles2.css">
+		<link rel="stylesheet" href="styles.css">
 
 		<style>
 			/* Agrega estilos para ocultar el menú desplegable por defecto */
@@ -46,7 +46,7 @@
                 <span class="menu-icon">Libretas</span>
                 <nav class="navegacion">
                     <ul>
-                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="Pagina informativa.html">Inicio</a></li>
                         <li><a href="prueba 3.html">Productos</a></li>
                         <li><a href="Pagina de comentarios.html">Comentarios</a></li>
                         <li class="menu-desplegable">
@@ -64,28 +64,51 @@
                     </ul>
                 </nav>
             </div>
-			
+	
         </header>
 		<main>
-			<div class="container-img">
-				<a href="#img3">
-					<img src="imagen11.jpg" alt="imagen-producto">
-				</a>
-			</div>
-			<article class="ligth-box" id="img3">
-				<img src="img3.png" alt="">
-				<a href="" class="close">x</a>
-			</article>
-			<div class="container-info-product">
-				<div class="container-price">
-					<span>$150.00</span>
-				</div>
-				<div class="container-add-cart">
-					<div class="container-quantity">
-						<input type="number" id="inputNumber" placeholder="Ingresa un número">
-						<button id="calculateButton" mostrarResultado()>Añadir a carrito</button>
-					</div>
-				</div>
+		 <div class="slide" align="center">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" 
+                      name="slide" aria-hidden="true" hidden="" checked="checked">
+                <div class="slide-item">
+                    <img src="imagen11.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" 
+                      name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="32.jpg">
+                </div>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-1" class="slide-control next control-3">›</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <article class="ligth-box" id="img3">
+            <img src="img3.png" alt="">
+            <a href="" class="close">x</a>
+        </article>
+	
+        <div class="container-info-product">
+            <div class="container-price">
+                <span>$150.00</span>
+            </div>
+            <div class="container-add-cart">
+                <div class="container-quantity">
+                    <input type="number" id="inputNumber" placeholder="Ingresa un número">
+                    <button id="calculateButton" onclick="mostrarResultado()">Añadir a carrito</button>
+                </div>
+            </div>
 
 				<div class="container-description">
 					<div class="title-description">
@@ -98,6 +121,7 @@
 						</p>
 					</div>
 				</div>
+			</main>
 				<script>
 					// Función para mostrar el resultado en una ventana emergente
 					function mostrarResultado() {
