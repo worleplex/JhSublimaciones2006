@@ -4,17 +4,99 @@ body {
       padding: 0;
     
     }
-    header {
-      background-color: #333;
-      color: #FFD700;
-      padding: 40px;
-    }
+    /* Agrega estilos para ocultar el menú desplegable por defecto */
+  .navegacion ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: grey ; /* Cambia el color de fondo a azul */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ajusta la sombra según tus necesidades */
+          }
+  
+  /* Ajusta el ancho y elimina el padding para apilar las opciones */
+  .navegacion ul ul li {
+        width: 100%;
+        padding: 0;
+        text-align: left;
+          }
+  /* Ajusta estilos para mostrar el menú desplegable cuando la clase 'desplegado' está presente */
+  .navegacion ul li:hover > ul {
+        display: block;
+          }
+  
+  /* Agrega estilos para el contenedor del menú desplegable */
+  .menu-desplegable {
+      position: relative;
+      display: inline-block;
+          }
+          .navegacion ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+       }
+       .navegacion ul li{
+           display: inline-block;
+       }
+       .navegacion ul li a{
+           display: block;
+           padding: 0.5rem 1rem;
+           transition: all 0.4s linear;}
+  header {
+      background: #536976;
+      background: -webkit-linear-gradient(to right, #292E49, #536976);
+      background: linear-gradient(to right, #292E49, #536976);
+      color: #FFF;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      z-index: 1;
+  } 
+  header h1{
+    padding-top: 70px;
+    padding-bottom: 55px;
+  }
+  header img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    padding-left: 5px;
+    padding-top: 5px;
+    float: left;
+  }
+  .navegacion {
+      background-color: grey;
+      border-bottom: 1px solid #DDD;
+      padding: 10px;
+      text-align: center;
+
+  }
+  .navegacion a {
+      display: inline-block;
+      margin: 0 20px;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+  }
+  .navegacion a:hover {
+      color: #FFF;
+      background-color: #0074D9;
+      padding: 11px;
+      border-radius: 5px;
+  }
+
     h1, h2, h3{
       margin: 0;
       padding: 0;
     }
     .container {
       margin: 20px;
+      padding-top: 12rem;
     }
     .productos img {
       max-width: 100%;
@@ -51,51 +133,20 @@ body {
     padding: 12px;
   
     }
-    #formulario {
-      display: none;
-    }
-    #formulario2{
-      display: none;
-    }
-    #formulario3{
-      display: none;
-    }
-    #formulario4{
-      display: none;
-    }
-    #formulario5{
-      display: none;
-    }
     body{
       height: 100%; 
       font-family: sans-serif;
     }
-    button, input, select, textarea {
-      font-family: inherit; /* hace que el valor de la propiedad coincida con el valor calculado 
-      de la propiedad de su elemento principal; hereda el valor del padre.*/
-      font-size: 100%;
-    }
-    .contact_form{  
-      width: 500px; 
-      height: auto;
-      margin: auto; /*centra horizontalmente*/
-      border-radius: 10px;  
-      padding-top: 20px;
-      padding-bottom: 20px;  
-      background-color: #fbfbfb; 
-      padding-left: 15px; 
-    }
-    input{
-      background-color: #fbfbfb; 
-      width: 200px; 
-      height: 20px; 
-      border-radius: 5px;  
-      border-style: solid; 
-      border-width: 1px; 
-      border-color: #ab4493; 
-      margin-top: 10px;   
-      padding-left: 10px;
-      margin-bottom: 20px; 
+    .buttons{
+      background: #536976;
+      background: -webkit-linear-gradient(to right, #292E49, #536976);
+      background: linear-gradient(to right, #292E49, #536976);
+      color: #FFF;
+      text-align: center;
+      position: absolute;
+      left: 0;
+      right: 0;
+      z-index: 1;
     }
     .menu {
       position: relative;
