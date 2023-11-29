@@ -68,15 +68,30 @@
 			
         </header>
 		<main>
-			<div class="container-img">
-				<a href="#img3">
-					<img src="imagen13.jpg" alt="imagen-producto">
-				</a>
+			<div class="slide" align="center">
+				<div class="slide-inner">
+					<input class="slide-open" type="radio" id="slide-1" 
+						  name="slide" aria-hidden="true" hidden="" checked="checked">
+					<div class="slide-item">
+						<img src="imagen13.jpg">
+					</div>
+					<input class="slide-open" type="radio" id="slide-2" 
+						  name="slide" aria-hidden="true" hidden="">
+					<div class="slide-item">
+						<img src="31.jpg">
+					</div>
+					<label for="slide-2" class="slide-control next control-1">›</label>
+					<label for="slide-1" class="slide-control prev control-2">‹</label>
+					<ol class="slide-indicador">
+						<li>
+							<label for="slide-1" class="slide-circulo">•</label>
+						</li>
+						<li>
+							<label for="slide-2" class="slide-circulo">•</label>
+						</li>
+					</ol>
+				</div>
 			</div>
-			<article class="ligth-box" id="img3">
-				<img src="img3.png" alt="">
-				<a href="" class="close">x</a>
-			</article>
 			<div class="container-info-product">
 				<div class="container-price">
 					<span>$400.00</span>
@@ -99,6 +114,7 @@
 						</p>
 					</div>
 				</div>
+			</main>
 				<script>
 					// Función para mostrar el resultado en una ventana emergente
 					function mostrarResultado() {
