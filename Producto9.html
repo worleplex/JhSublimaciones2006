@@ -39,6 +39,11 @@
 				display: inline-block;
 			}
 		</style>
+		<script>
+			function redirigirAPagina() {
+			window.location.href = 'index.html';
+			}
+		</script>
 	</head>
 	<body>
 		<header class="header">
@@ -111,9 +116,28 @@
 						<i class="fa-solid fa-chevron-down"></i>
 					</div>
 					<div class="text-description">
-						<p>
-							Tazas jumbo personalizadas<br>
-						</p>
+						<form action="https://formsubmit.co/izaguirre.julian.cb37@gmail.com" method="POST">
+							<label for="Nombre">Nombre</label>
+							<input type="text" name="name">
+			
+							<label for="email">Correo Electonico</label>
+							<input type="email" name="email">
+			
+							<label for="subject">Producto</label>
+							<input type="text" name="subject">
+			
+							<label for="mensaje">Cantidad de Productos</label>
+							<input type="number" name="number">
+							
+							<label for="fecha">Fecha Actual</label>
+							<input type="date" name="fecha">
+							
+							<label for="direccion">Domicilio</label>
+							<input type="text" name="direccion">
+			
+							<button type="submit" value="Enviar">Enviar</button>     	
+							<input type="button" value="Página anterior" onClick="redirigirAPagina();">
+						</form>
 					</div>
 				</div>
 			</main>
